@@ -44,6 +44,9 @@ a {
 	text-decoration:none;
 	border-bottom:1px solid #FFE4E1;
 	color:FFE4E1;
-	
+}
+
+a:hover {
+	border-bottom: 3px solid #FFE4E1;
 }
 
