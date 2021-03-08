@@ -53,41 +53,37 @@ a:hover {
 
 h1 {
 	text-align:center;
+	margin:0px;
+	padding:20px;
 }
 
-.first img {
+.content img {
 	width:300px;
 	height:200px;
 }
 
-.first {
+.example {
 	display:flex;
 	justify-content:space-between;
-	margin:50px;
+	margin:0px;
 }
 
  p {
 	display:flex;
 	text-align:center;
-	margin:20px;
-	
-}
-
-.second img {
-	width:300px;
-	height:200px;
-}
-
-.second {
-	display:flex;
-	justify-content:space-around;
-	margin:50px;
-}
-
-.second p {
-	align-content:center;
+	justify-content:center;
+	margin:20px 50px 20px 50px;
 	
 }
 
 
+
+.content {
+	background-color:#F0F8FF;
+	color:	#B0C4DE;
+}
+
+.example div {
+	padding:20px;
+}
 
