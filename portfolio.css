@@ -3,6 +3,7 @@
 }
 body {
 	margin:0;
+	
 }
 
 
@@ -49,4 +50,44 @@ a {
 a:hover {
 	border-bottom: 3px solid #FFE4E1;
 }
+
+h1 {
+	text-align:center;
+}
+
+.first img {
+	width:300px;
+	height:200px;
+}
+
+.first {
+	display:flex;
+	justify-content:space-between;
+	margin:50px;
+}
+
+ p {
+	display:flex;
+	text-align:center;
+	margin:20px;
+	
+}
+
+.second img {
+	width:300px;
+	height:200px;
+}
+
+.second {
+	display:flex;
+	justify-content:space-around;
+	margin:50px;
+}
+
+.second p {
+	align-content:center;
+	
+}
+
+
 
