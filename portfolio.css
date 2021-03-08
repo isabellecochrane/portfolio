@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+}
+
+
+nav {
+	display:flex;
+	justify-content:space-between;
+}
+
+.name {
+	display:flex;
+	align-items:center;
+	
+}
+
+.navlinks{
+	display:flex;
+	justify-content:flex-end;
+	
+}
+
+ul{
+	list-style-type:none;
+}
+
+li {
+		display:flex;
+		display:inline;
+		align-items:center;
+}
