@@ -1,31 +1,49 @@
 *{
 	box-sizing: border-box;
 }
+body {
+	margin:0;
+}
 
 
 nav {
 	display:flex;
 	justify-content:space-between;
+	background-color:#87CEFA;
 }
 
 .name {
 	display:flex;
 	align-items:center;
+	margin:10px;
+	color:FFE4E1;
 	
 }
 
 .navlinks{
 	display:flex;
 	justify-content:flex-end;
+	align-items:center;
 	
 }
 
 ul{
 	list-style-type:none;
+	justify-content:center;
+	padding:0px;
 }
 
-li {
+.navlinks li {
 		display:flex;
 		display:inline;
 		align-items:center;
+		padding:0px 20px 0px 0px;
 }
+
+a {
+	text-decoration:none;
+	border-bottom:1px solid #FFE4E1;
+	color:FFE4E1;
+	
+}
+
