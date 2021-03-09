@@ -18,8 +18,10 @@ nav {
 	align-items:center;
 	margin:10px;
 	color:FFE4E1;
-	font-size:1.5em;
+	font-size:1.25em;
 	padding:0px;
+	height:40px;
+	
 	
 }
 
@@ -84,4 +86,21 @@ h1 {
     object-fit: cover;
 	justify-content:center;
 	margin:auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+nav {
+	display:flex;
+	flex-direction:column;
+}
+.name {
+	justify-content:center;
+	margin:0;
+}
+.navlinks{
+	justify-content:center;
+	align-items:flex-start;
+}
 }

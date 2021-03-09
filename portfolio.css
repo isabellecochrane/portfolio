@@ -17,8 +17,9 @@ nav {
 	align-items:center;
 	margin:10px;
 	color:FFE4E1;
-	font-size:1.5em;
+	font-size:1.25em;
 	padding:0px;
+	height:40px;
 	
 }
 
@@ -42,13 +43,13 @@ ul{
 		padding:0px 20px 0px 0px;
 }
 
-a {
+.navlinks a {
 	text-decoration:none;
 	border-bottom:1px solid #FFE4E1;
 	color:FFE4E1;
 }
 
-a:hover {
+.navlinks a:hover {
 	border-bottom: 3px solid #FFE4E1;
 }
 
@@ -79,6 +80,7 @@ h1 {
 	text-align:center;
 	margin:20px 50px 20px 50px;
 	width:200px;
+	align-content:center;
 	
 }
 
@@ -89,4 +91,20 @@ h1 {
 .example div {
 	padding:20px;
 }
+
+@media screen and (max-width: 600px) {
+nav {
+	display:flex;
+	flex-direction:column;
+}
+.name {
+	justify-content:center;
+	margin:0;
+}
+.navlinks{
+	justify-content:center;
+	align-items:flex-start;
+}
+}
+
 
