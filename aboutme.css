@@ -104,3 +104,9 @@ nav {
 	align-items:flex-start;
 }
 }
+
+@media screen and (max-width: 500px) {
+	.aboutcontent p {
+		padding:0% 10% 0% 10%;
+	}
+}
