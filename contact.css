@@ -87,6 +87,7 @@ h1 {
 
 .personal{
 		padding:5px;
+		margin:0px;
 }
 
 .contactInfo a{
@@ -94,8 +95,9 @@ h1 {
 	
 }
 
-.contactInfo img {
-	size:10px;
+.general img {
+	width:20px;
+	height:20px;
 }
 
 
