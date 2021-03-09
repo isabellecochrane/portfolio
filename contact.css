@@ -73,6 +73,7 @@ h1 {
 }
 
 .contactInfo {
+	margin-top:20%;
 	display:flex;
 	justify-content:center;
 	align-items:center;
