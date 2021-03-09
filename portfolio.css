@@ -54,12 +54,17 @@ ul{
 }
 
 
+
+
 h1 {
 	text-align:center;
 	margin:0px;
 	padding:20px;
 }
 
+h2 {
+	text-decoration:underline;
+}
 .content img {
 	width:300px;
 	height:200px;
@@ -72,13 +77,15 @@ h1 {
 
 }
 
-
+.websiteTech {
+	align-items:flex-end;
+}
 
 
  p {
 	display:flex;
 	text-align:center;
-	margin:20px 50px 20px 50px;
+	margin:70px 50px 20px 10px;
 	width:200px;
 	align-content:center;
 	
@@ -106,14 +113,20 @@ nav {
 	justify-content:center;
 	align-items:flex-start;
 }
+
 p {
 	margin:20px 20px 20px 0px;
 }
+
 }
 
 @media screen and (max-width: 700px) {
+
 p {
 	margin:20px 20px 20px 0px;
+}
+
+.websiteTech {
 }
 	
 }
