@@ -1,6 +1,8 @@
 *{
 	box-sizing: border-box;
 }
+
+/* this is for navbar (every file should have this) */
 body {
 	margin:0;
 	background-color:F0F8FF;
@@ -20,14 +22,12 @@ nav {
 	font-size:1.25em;
 	padding:0px;
 	height:40px;
-	
 }
 
 .navlinks{
 	display:flex;
 	align-items:center;
 	justify-content:flex-end;
-	
 }
 
 ul{
@@ -54,10 +54,20 @@ ul{
 }
 
 
+
+/*actual pages content */
+
+
 h1 {
 	text-align:center;
 	margin:0px;
 	padding:20px;
+}
+
+h2 {
+	text-decoration:underline;
+	display:flex;
+	justify-content:center;
 }
 
 .content img {
@@ -69,52 +79,60 @@ h1 {
 	display:flex;
 	justify-content:center;
 	margin:0px;
-
+	flex-wrap: wrap;
 }
 
-
-
-
- p {
+p {
 	display:flex;
-	text-align:center;
-	margin:20px 50px 20px 50px;
+	margin:0px 50px 20px 10px;
 	width:200px;
-	align-content:center;
-	
+}
+
+ul {
+	margin:0px 50px 20px 10px;
 }
 
 .content {
 	color:B0C4DE;
 }
 
-.example div {
 
-}
-
+/* media queries */
 
 @media screen and (max-width: 600px) {
-nav {
-	display:flex;
-	flex-direction:column;
-}
-.name {
-	justify-content:center;
-	margin:0;
-}
-.navlinks{
-	justify-content:center;
-	align-items:flex-start;
-}
-p {
-	margin:20px 20px 20px 0px;
-}
+	
+	nav {
+		display:flex;
+		flex-direction:column;
+	}
+	
+	.name {
+		justify-content:center;
+		margin:0;
+	}
+	
+	.navlinks{
+		justify-content:center;
+		align-items:flex-start;
+	}
+
+	p {
+		margin:0px 20px 20px 0px;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
-p {
-	margin:20px 20px 20px 0px;
+
+	p {
+		margin:0px 20px 20px 0px;
+	}	
+
+	
 }
+
+@media screen and (max-width:400px) {
+
 	
 }
 
