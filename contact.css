@@ -1,9 +1,10 @@
-*{
+{
 	box-sizing: border-box;
 }
+
 body {
 	margin:0;
-	background-color:F0F8FF;
+	background-color:#F0F8FF;
 }
 
 nav {
@@ -20,6 +21,7 @@ nav {
 	font-size:1.25em;
 	padding:0px;
 	height:40px;
+	
 	
 }
 
@@ -49,48 +51,56 @@ ul{
 	color:FFE4E1;
 }
 
-.navlinks a:hover {
+a:hover {
 	border-bottom: 3px solid #FFE4E1;
 }
+
+
+
+
+
+
+
+
+
 
 
 h1 {
 	text-align:center;
 	margin:0px;
+	color:B0C4DE;;
 	padding:20px;
 }
 
-.content img {
-	width:300px;
-	height:200px;
-}
-
-.example {
+.contactInfo {
 	display:flex;
 	justify-content:center;
-	margin:0px;
-
-}
-
-
-
-
- p {
-	display:flex;
-	text-align:center;
-	margin:20px 50px 20px 50px;
-	width:200px;
-	align-content:center;
+	align-items:center;
+	color:B0C4DE;
 	
 }
 
-.content {
-	color:B0C4DE;
+
+.general {
+	padding:5px;
 }
 
-.example div {
-	padding:20px;
+.personal{
+		padding:5px;
 }
+
+.contactInfo a{
+	width:10px;
+	
+}
+
+.contactInfo img {
+	size:10px;
+}
+
+
+
+
 
 @media screen and (max-width: 600px) {
 nav {
@@ -105,9 +115,4 @@ nav {
 	justify-content:center;
 	align-items:flex-start;
 }
-p {
-	margin:0;
 }
-}
-
-
