@@ -4,49 +4,49 @@
 
 /* this is for navbar (every file should have this) */
 body {
-	margin:0;
-	background-color:F0F8FF;
+	margin: 0;
+	background-color: F0F8FF;
 }
 
 nav {
-	display:flex;
-	justify-content:space-between;
-	background-color:87CEFA;
+	display: flex;
+	justify-content: space-between;
+	background-color: 87CEFA;
 }
 
 .name {
-	display:flex;
-	align-items:center;
-	margin:10px;
-	color:FFE4E1;
-	font-size:1.25em;
-	padding:0px;
-	height:40px;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	color: FFE4E1;
+	font-size: 1.25em;
+	padding: 0px;
+	height: 40px;
 }
 
 .navlinks{
-	display:flex;
-	align-items:center;
-	justify-content:flex-end;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 ul{
-	list-style-type:none;
-	justify-content:flex-end;
-	padding:0px;
+	list-style-type: none;
+	justify-content: flex-end;
+	padding: 0px;
 }
 
 .navlinks li {
-		display:flex;
-		display:inline;
-		align-items:center;
-		padding:0px 20px 0px 0px;
+		display: flex;
+		display: inline;
+		align-items: center;
+		padding: 0px 20px 0px 0px;
 }
 
 .navlinks a {
-	text-decoration:none;
-	border-bottom:1px solid #FFE4E1;
-	color:FFE4E1;
+	text-decoration: none;
+	border-bottom: 1px solid #FFE4E1;
+	color: FFE4E1;
 }
 
 .navlinks a:hover {
@@ -59,41 +59,44 @@ ul{
 
 
 h1 {
-	text-align:center;
-	margin:0px;
-	padding:20px;
+	text-align: center;
+	margin: 0px;
+	padding: 20px;
 }
 
 h2 {
-	text-decoration:underline;
-	display:flex;
-	justify-content:center;
+	text-decoration: underline;
+	text-align:center;
 }
 
 .content img {
-	width:300px;
-	height:200px;
+	width: 300px;
+	height: 200px;
 }
 
 .example {
-	display:flex;
-	justify-content:center;
-	margin:0px;
+	display: flex;
+	justify-content: center;
+	margin: 0px;
 	flex-wrap: wrap;
 }
 
-p {
-	display:flex;
-	margin:0px 50px 20px 10px;
-	width:200px;
+.websiteTech {
+	align-items: flex-end;
 }
 
-ul {
-	margin:0px 50px 20px 10px;
+p {
+	display: flex;
+	margin: 0px 50px 20px 10px;
+	width: 200px;
+}
+
+.example  ul {
+	margin: 0px 50px 20px 10px;
 }
 
 .content {
-	color:B0C4DE;
+	color: B0C4DE;
 }
 
 
@@ -102,37 +105,40 @@ ul {
 @media screen and (max-width: 600px) {
 	
 	nav {
-		display:flex;
-		flex-direction:column;
+		display: flex;
+		flex-direction: column;
 	}
 	
 	.name {
-		justify-content:center;
-		margin:0;
+		justify-content: center;
+		margin: 0;
 	}
 	
 	.navlinks{
-		justify-content:center;
-		align-items:flex-start;
+		justify-content: center;
+		align-items: flex-start;
 	}
 
 	p {
-		margin:0px 20px 20px 0px;
+		margin: 20px 20px 20px 0px;
 	}
 
 }
 
 @media screen and (max-width: 700px) {
 
-	p {
-		margin:0px 20px 20px 0px;
-	}	
+p {
+	margin: 20px 20px 20px 0px;
+}
 
 	
 }
 
 @media screen and (max-width:400px) {
-
+	.example a {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	
 }
 
