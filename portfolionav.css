@@ -5,7 +5,7 @@
 /* this is for navbar (every file should have this) */
 body {
 	margin: 0;
-	background-color: F0F8FF;
+	background-color: #F0F8FF;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
 	display: flex;
 	align-items: center;
 	margin: 10px;
-	color: FFE4E1;
+	color: #FFE4E1;
 	font-size: 1.25em;
 	padding: 0px;
 	height: 40px;
@@ -46,7 +46,7 @@ ul{
 .navlinks a {
 	text-decoration: none;
 	border-bottom: 1px solid #FFE4E1;
-	color: FFE4E1;
+	color: #FFE4E1;
 }
 
 .navlinks a:hover {
@@ -85,7 +85,6 @@ h2 {
 .written_content {
 	display:flex;
 }
-
 
 p {
 	margin: 0px 50px 20px 10px;
@@ -128,10 +127,15 @@ h3 {
 	margin: auto;
 	
 }
+
 .certificate_1:hover .scrum_text {
 	background: #006699;
 	transition: .5s ease;
 	color: white;
+}
+
+.query_text {
+	display:none;
 }
 
 
@@ -143,43 +147,47 @@ h3 {
 	.certificates {
 		display:flex;
 		justify-content:space-around;
-	
+	}
+			
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	
-	nav {
-		display: flex;
-		flex-direction: column;
+	.query_text {
+		display:block;
 	}
-	
-	.name {
-		justify-content: center;
-		margin: 0;
-	}
-	
-	.navlinks{
-		justify-content: center;
-		align-items: flex-start;
-	}
-
-	 p {
-		margin: 20px 20px 20px 0px;
-	}
-
+		
 }
 
 
 @media screen and (max-width: 700px) {
 
- p {
-	margin: 20px 20px 20px 0px;
-}
+ 	p {
+		margin: 20px 20px 20px 0px;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
 
+	.name {
+		justify-content: center;
+		margin: 0;
+	}
+
+	.navlinks{
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+ 	p {
+		margin: 20px 20px 20px 0px;
+	}
 	
 }
 
 @media screen and (max-width:400px) {
+	
 	.example a {
 		display: flex;
 		flex-wrap: wrap;
@@ -189,7 +197,6 @@ h3 {
 		display:grid;
 		grid-template-columns: 1fr;
 		margin:auto;
-
 	}
 	
 	.example ul {
@@ -210,6 +217,8 @@ h3 {
 		display: flex;
 		justify-content: row;
 	}
+	
+	
 }
 
 

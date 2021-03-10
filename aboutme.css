@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background-color: F0F8FF;
+	background-color: #F0F8FF;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
 	display: flex;
 	align-items: center;
 	margin: 10px;
-	color: FFE4E1;
+	color: #FFE4E1;
 	font-size: 1.25em;
 	padding: 0px;
 	height: 40px;
@@ -45,7 +45,7 @@ ul{
 .navlinks a {
 	text-decoration: none;
 	border-bottom: 1px solid #FFE4E1;
-	color: FFE4E1;
+	color: #FFE4E1;
 }
 
 .navlinks a:hover {
@@ -62,15 +62,15 @@ ul{
 }
 
 h1 {
-	text-align:center;
-	margin:0px;
-	color:006699;
+	text-align: center;
+	margin: 0px;
+	color: #006699;
 }
 
  .aboutcontent p{
-	display:flex;
-	text-align:center;
-	color:006699;
+	display: flex;
+	text-align: center;
+	color: #006699;
 	padding: 0% 25% 0% 25%;
 	
 }
@@ -80,29 +80,29 @@ h1 {
     width: 100px;
     height: 100px;
     object-fit: cover;
-	justify-content:center;
-	margin:auto;
+	justify-content: center;
+	margin: auto;
 }
 
 
 
 @media screen and (max-width: 600px) {
 nav {
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 }
 .name {
-	justify-content:center;
+	justify-content: center;
 	margin:0;
 }
 .navlinks{
-	justify-content:center;
-	align-items:flex-start;
+	justify-content: center;
+	align-items: flex-start;
 }
 }
 
 @media screen and (max-width: 500px) {
 	.aboutcontent p {
-		padding:0% 10% 0% 10%;
+		padding: 0% 10% 0% 10%;
 	}
 }

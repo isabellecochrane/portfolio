@@ -17,7 +17,7 @@ nav {
 	display: flex;
 	align-items: center;
 	margin: 10px;
-	color: FFE4E1;
+	color: #FFE4E1;
 	font-size: 1.25em;
 	padding: 0px;
 	height: 40px;
@@ -57,13 +57,15 @@ ul{
 
 
 
-
+.contact {
+	margin: 10px;
+}
 
 
 h1 {
 	text-align:center;
 	margin: 0px;
-	color: 006699;
+	color: #006699;
 	padding: 20px;
 }
 
@@ -72,7 +74,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: 006699;
+	color: #006699;
 	
 }
 
