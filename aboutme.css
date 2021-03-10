@@ -3,58 +3,54 @@
 }
 
 body {
-	margin:0;
-	background-color:#F0F8FF;
+	margin: 0;
+	background-color: F0F8FF;
 }
 
 nav {
-	display:flex;
-	justify-content:space-between;
-	background-color:87CEFA;
+	display: flex;
+	justify-content: space-between;
+	background-color: #006699;
 }
 
 .name {
-	display:flex;
-	align-items:center;
-	margin:10px;
-	color:FFE4E1;
-	font-size:1.25em;
-	padding:0px;
-	height:40px;
-	
-	
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	color: FFE4E1;
+	font-size: 1.25em;
+	padding: 0px;
+	height: 40px;
 }
 
 .navlinks{
-	display:flex;
-	align-items:center;
-	justify-content:flex-end;
-	
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 ul{
-	list-style-type:none;
-	justify-content:flex-end;
-	padding:0px;
+	list-style-type: none;
+	justify-content: flex-end;
+	padding: 0px;
 }
 
 .navlinks li {
-		display:flex;
-		display:inline;
-		align-items:center;
-		padding:0px 20px 0px 0px;
+		display: flex;
+		display: inline;
+		align-items: center;
+		padding: 0px 20px 0px 0px;
 }
 
-a {
-	text-decoration:none;
-	border-bottom:1px solid #FFE4E1;
-	color:FFE4E1;
+.navlinks a {
+	text-decoration: none;
+	border-bottom: 1px solid #FFE4E1;
+	color: FFE4E1;
 }
 
-a:hover {
+.navlinks a:hover {
 	border-bottom: 3px solid #FFE4E1;
 }
-
 
 
 
@@ -68,13 +64,13 @@ a:hover {
 h1 {
 	text-align:center;
 	margin:0px;
-	color:B0C4DE;;
+	color:006699;
 }
 
  .aboutcontent p{
 	display:flex;
 	text-align:center;
-	color:B0C4DE;
+	color:006699;
 	padding: 0% 25% 0% 25%;
 	
 }

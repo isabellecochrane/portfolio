@@ -11,7 +11,7 @@ body {
 nav {
 	display: flex;
 	justify-content: space-between;
-	background-color: 87CEFA;
+	background-color: #006699;
 }
 
 .name {
@@ -82,63 +82,69 @@ h2 {
 	flex-wrap: wrap;
 }
 
-.websiteTech {
-	align-items: flex-end;
+.written_content {
+	display:flex;
 }
 
+
 p {
-	display: flex;
 	margin: 0px 50px 20px 10px;
 	width: 200px;
 }
 
 .example  ul {
-	margin: 0px 50px 20px 10px;
+	margin: 0px 50px 20px 0px;
 }
 
 .content {
-	color: B0C4DE;
+	color: #006699;
+}
+/*experiments */
+
+h3 {
+	text-decoration: underline;
+	text-align:center;
+}
+
+.certificates {
+	display:inline-grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items:center;
+	width:100%;
+	
+}
+
+.scrum_text {
+	height:200px;
+	width: 300px;
+	background: url(content_example.png);
+	background-size:100%;
+	color: transparent;
+}
+
+.scrum_text p{
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	
+}
+.certificate_1:hover .scrum_text {
+	background: #006699;
+	transition: .5s ease;
+	color: white;
 }
 
 
-/* experiment */
-
-.container {
-	position:relative;
-}
-
-
-.overlay {
-	position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: #008CBA;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.overlay_text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 
 /* media queries */
+
+@media screen and (max-width: 1200px) {
+	.certificates {
+		display:flex;
+		justify-content:space-around;
+	
+}
 
 @media screen and (max-width: 600px) {
 	
@@ -157,15 +163,16 @@ p {
 		align-items: flex-start;
 	}
 
-	p {
+	 p {
 		margin: 20px 20px 20px 0px;
 	}
 
 }
 
+
 @media screen and (max-width: 700px) {
 
-p {
+ p {
 	margin: 20px 20px 20px 0px;
 }
 
@@ -178,6 +185,31 @@ p {
 		flex-wrap: wrap;
 	}
 	
+	.certificates {
+		display:grid;
+		grid-template-columns: 1fr;
+		margin:auto;
+
+	}
+	
+	.example ul {
+		margin:0px;
+	}
+	
+	.example p {
+		margin:0px;
+		padding: 0px 0px 0px 10px;
+	}
+	
+	.example {
+		padding: 0px 0px 0px 20px;
+		justify-content:flex-start;
+	}
+	
+	.written_content {
+		display: flex;
+		justify-content: row;
+	}
 }
 
 
