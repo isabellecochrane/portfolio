@@ -1,0 +1,183 @@
+*{
+	box-sizing: border-box;
+}
+
+/* this is for navbar (every file should have this) */
+body {
+	margin: 0;
+	background-color: F0F8FF;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: 87CEFA;
+}
+
+.name {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	color: FFE4E1;
+	font-size: 1.25em;
+	padding: 0px;
+	height: 40px;
+}
+
+.navlinks{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+ul{
+	list-style-type: none;
+	justify-content: flex-end;
+	padding: 0px;
+}
+
+.navlinks li {
+		display: flex;
+		display: inline;
+		align-items: center;
+		padding: 0px 20px 0px 0px;
+}
+
+.navlinks a {
+	text-decoration: none;
+	border-bottom: 1px solid #FFE4E1;
+	color: FFE4E1;
+}
+
+.navlinks a:hover {
+	border-bottom: 3px solid #FFE4E1;
+}
+
+
+
+/*actual pages content */
+
+
+h1 {
+	text-align: center;
+	margin: 0px;
+	padding: 20px;
+}
+
+h2 {
+	text-decoration: underline;
+	text-align:center;
+}
+
+.content img {
+	display:flex;
+	width: 300px;
+	height: 200px;
+}
+
+.example {
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	flex-wrap: wrap;
+}
+
+.websiteTech {
+	align-items: flex-end;
+}
+
+p {
+	display: flex;
+	margin: 0px 50px 20px 10px;
+	width: 200px;
+}
+
+.example  ul {
+	margin: 0px 50px 20px 10px;
+}
+
+.content {
+	color: B0C4DE;
+}
+
+
+/* experiment */
+
+.container {
+	position:relative;
+}
+
+
+.overlay {
+	position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.name {
+		justify-content: center;
+		margin: 0;
+	}
+	
+	.navlinks{
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	p {
+		margin: 20px 20px 20px 0px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+p {
+	margin: 20px 20px 20px 0px;
+}
+
+	
+}
+
+@media screen and (max-width:400px) {
+	.example a {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+}
+
+
