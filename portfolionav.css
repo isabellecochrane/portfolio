@@ -139,6 +139,13 @@ h3 {
 
 /* media queries */
 
+@media screen and (max-width: 1200px) {
+	.certificates {
+		display:flex;
+		justify-content:space-around;
+	
+}
+
 @media screen and (max-width: 600px) {
 	
 	nav {
@@ -161,6 +168,7 @@ h3 {
 	}
 
 }
+
 
 @media screen and (max-width: 700px) {
 
