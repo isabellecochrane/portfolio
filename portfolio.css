@@ -5,20 +5,20 @@
 /* this is for navbar (every file should have this) */
 body {
 	margin: 0;
-	background-color: F0F8FF;
+	background-color: #F0F8FF;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
-	background-color: 87CEFA;
+	background-color: #006699;
 }
 
 .name {
 	display: flex;
 	align-items: center;
 	margin: 10px;
-	color: FFE4E1;
+	color: #FFE4E1;
 	font-size: 1.25em;
 	padding: 0px;
 	height: 40px;
@@ -46,7 +46,7 @@ ul{
 .navlinks a {
 	text-decoration: none;
 	border-bottom: 1px solid #FFE4E1;
-	color: FFE4E1;
+	color: #FFE4E1;
 }
 
 .navlinks a:hover {
@@ -55,7 +55,7 @@ ul{
 
 
 
-/*actual pages content */
+/*portfolio pages content */
 
 
 h1 {
@@ -82,95 +82,179 @@ h2 {
 	flex-wrap: wrap;
 }
 
-.websiteTech {
-	align-items: flex-end;
+.written_content {
+	display:flex;
 }
 
 p {
-	display: flex;
 	margin: 0px 50px 20px 10px;
 	width: 200px;
 }
 
 .example  ul {
-	margin: 0px 50px 20px 10px;
+	margin: 0px 50px 20px 0px;
 }
 
 .content {
-	color: B0C4DE;
+	color: #006699;
+}
+
+h3 {
+	text-decoration: underline;
+	text-align:center;
+}
+
+.certificates {
+	display:inline-grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items:center;
+	width:100%;
+	
+}
+
+.scrum_text {
+	height:200px;
+	width: 300px;
+	background: url(content_example.png);
+	background-size:100%;
+	color: transparent;
+}
+
+.scrum_text p{
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	
+}
+
+.certificate_1:hover .scrum_text {
+	background: #006699;
+	transition: .5s ease;
+	color: white;
+}
+
+.query_text {
+	display:none;
 }
 
 
-/* experiment */
+/*contact css */
 
-.container {
-	position:relative;
+
+.contact {
+	margin: 10px;
 }
 
 
-.overlay {
-	position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: #008CBA;
+h1 {
+	text-align:center;
+	margin: 0px;
+	color: #006699;
+	padding: 20px;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.contactInfo {
+	margin-top: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #006699;
+	
 }
 
-.overlay_text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.general {
+	padding: 5px;
 }
 
+.personal{
+		padding: 5px;
+		margin: 0px;
+}
 
-/* media queries */
+.contactInfo a{
+	width: 10px;
+	
+}
+
+.general img {
+	width: 20px;
+	height: 20px;
+}
+
+/* about css */
+
+.aboutcontent {
+	padding:20px;
+}
+
+h1 {
+	text-align: center;
+	margin: 0px;
+	color: #006699;
+}
+
+ .aboutcontent p{
+	display: flex;
+	text-align: center;
+	color: #006699;
+	padding: 0% 25% 0% 25%;
+	
+}
+
+.face {
+	display:flex;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+	justify-content: center;
+	margin: auto;
+}
+
+/* nav media queries*/
 
 @media screen and (max-width: 600px) {
-	
+  nav {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .name {
+	justify-content: center;
+	margin: 0;
+  }
+  
+  .navlinks{
+	justify-content: center;
+	align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+ 	p {
+		margin: 20px 20px 20px 0px;
+	}
 	nav {
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.name {
 		justify-content: center;
 		margin: 0;
 	}
-	
+
 	.navlinks{
 		justify-content: center;
 		align-items: flex-start;
 	}
 
-	p {
+ 	p {
 		margin: 20px 20px 20px 0px;
-	}
-
+	}	
 }
 
-@media screen and (max-width: 700px) {
-
-p {
-	margin: 20px 20px 20px 0px;
-}
-
-	
-}
+/*portfolio media queries */
 
 @media screen and (max-width:400px) {
 	.example a {
@@ -178,6 +262,44 @@ p {
 		flex-wrap: wrap;
 	}
 	
+	.certificates {
+		display:grid;
+		grid-template-columns: 1fr;
+		margin:auto;
+	}
+	
+	.example ul {
+		margin:0px;
+	}
+	
+	.example p {
+		margin:0px;
+		padding: 0px 0px 0px 10px;
+	}
+	
+	.example {
+		padding: 0px 0px 0px 20px;
+		justify-content:flex-start;
+	}
+	
+	.written_content {
+		display: flex;
+		justify-content: row;
+	}	
 }
 
+
+@media screen and (max-width: 1200px) {
+	.certificates {
+		display:flex;
+		justify-content:space-around;
+	}
+			
+}
+
+@media screen and (max-width: 768px) {	
+	.query_text {
+		display:block;
+	}		
+}
 
