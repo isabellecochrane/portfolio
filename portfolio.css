@@ -255,6 +255,7 @@ h1 {
 		grid-template-columns: 1fr;
 		margin:auto;
 	}
+	
 }
 
 @media screen and (max-width:400px) {
@@ -272,7 +273,7 @@ h1 {
 		padding: 0px 0px 0px 10px;
 	}
 	
-	.example {
+	.written_content {
 		padding: 0px 0px 0px 20px;
 		justify-content:flex-start;
 	}
@@ -281,6 +282,14 @@ h1 {
 		display: flex;
 		justify-content: row;
 	}	
+	
+	.scrum_text {
+		margin:auto;
+	}
+	
+	.example img {
+		margin:auto;
+	}
 }
 
 @media screen and (max-width: 768px) {	
