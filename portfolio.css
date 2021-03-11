@@ -1,0 +1,300 @@
+*{
+	box-sizing: border-box;
+}
+
+/* this is for navbar (every file should have this) */
+body {
+	margin: 0;
+	background-color: #F0F8FF;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #006699;
+}
+
+.name {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	color: #FFE4E1;
+	font-size: 1em;
+	padding: 0px;
+	height: 40px;
+}
+
+.navlinks{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0px;
+}
+
+.navlinks li {
+		display: flex;
+		display: inline;
+		align-items: center;
+		padding: 0px 20px 0px 0px;
+}
+
+.navlinks a {
+	text-decoration: none;
+	border-bottom: 1px solid #FFE4E1;
+	color: #FFE4E1;
+}
+
+.navlinks a:hover {
+	border-bottom: 3px solid #FFE4E1;
+}
+
+
+
+/*portfolio pages content */
+
+
+h1 {
+	text-align: center;
+	margin: 0px;
+	padding: 20px;
+}
+
+h2 {
+	text-decoration: underline;
+	text-align:center;
+}
+
+.content img {
+	display:flex;
+	width: 300px;
+	height: 200px;
+}
+
+.example {
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	flex-wrap: wrap;
+}
+
+.written_content {
+	display:flex;
+}
+
+.written_content p {
+	margin: 0px 50px 20px 10px;
+	width: 200px;
+}
+
+.example  ul {
+	margin: 0px 50px 20px 0px;
+}
+
+.content {
+	color: #006699;
+}
+
+h3 {
+	text-decoration: underline;
+	text-align:center;
+}
+
+.certificates {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items:center;
+	width:100%;
+	
+}
+
+.scrum_text {
+	height:200px;
+	width: 300px;
+	background: url(content_example.png);
+	background-size:100%;
+	color: transparent;
+}
+
+.scrum_text p{
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	
+}
+
+.certificate_1:hover .scrum_text {
+	background: #006699;
+	transition: .5s ease;
+	color: white;
+}
+
+.query_text {
+	display:none;
+}
+
+
+/*contact css */
+
+
+.contact {
+	margin: 10px;
+}
+
+
+h1 {
+	text-align:center;
+	margin: 0px;
+	color: #006699;
+	padding: 20px;
+}
+
+.contactInfo {
+	margin-top: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #006699;
+	
+}
+
+.general {
+	padding: 5px;
+}
+
+.personal{
+		padding: 5px;
+		margin: 0px;
+}
+
+.contactInfo a{
+	width: 10px;
+	
+}
+
+.general img {
+	width: 20px;
+	height: 20px;
+}
+
+/* about css */
+
+.aboutcontent {
+	padding:20px;
+}
+
+h1 {
+	text-align: center;
+	margin: 0px;
+	color: #006699;
+}
+
+ .aboutcontent p{
+	text-align: center;
+	color: #006699;
+	padding: 0% 25% 0% 25%;
+	
+}
+
+.face {
+	display:flex;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+	justify-content: center;
+	margin: auto;
+}
+
+/* nav media queries*/
+
+@media screen and (max-width: 600px) {
+  nav {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .name {
+	justify-content: center;
+	margin: 0;
+  }
+  
+  .navlinks{
+	justify-content: center;
+	align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+ 	p {
+		margin: 20px 20px 20px 0px;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.name {
+		justify-content: center;
+		margin: 0;
+	}
+
+ 	p {
+		margin: 0px 20px 20px 0px;
+	}	
+}
+
+/*portfolio media queries */
+
+@media screen and (max-width:650px) {
+	.certificates {
+		display:grid;
+		grid-template-columns: 1fr;
+		margin:auto;
+	}
+	
+}
+
+@media screen and (max-width:400px) {
+	.example a {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.example ul {
+		margin:0px;
+	}
+	
+	.example p {
+		margin:0px;
+		padding: 0px 0px 0px 10px;
+	}
+	
+	.written_content {
+		padding: 0px 0px 0px 20px;
+		justify-content:flex-start;
+	}
+	
+	.written_content {
+		display: flex;
+		justify-content: row;
+	}	
+	
+	.scrum_text {
+		margin:auto;
+	}
+	
+	.example img {
+		margin:auto;
+	}
+}
+
+@media screen and (max-width: 768px) {	
+	.query_text {
+		display:block;
+	}		
+}
+
